@@ -1,4 +1,13 @@
 
+## DFS vs BFS
+| 비교 항목  | DFS (깊이 우선 탐색) | BFS (너비 우선 탐색) |
+|-----------|----------------|----------------|
+| 탐색 방법 | 한 방향으로 끝까지 탐색 후 백트래킹 | 현재 노드에서 가까운 노드부터 탐색 |
+| 자료구조 | 스택(Stack) 또는 재귀 | 큐(Queue) |
+| 최단 경로 | 보장되지 않음 | 최단 경로 탐색에 유리 |
+| 메모리 사용 | 상대적으로 적음 | 큐를 사용하므로 더 많은 메모리 필요 |
+| 구현 방식 | 재귀 또는 스택 | 큐 |
+
 
 ## 재귀함수
 
@@ -165,3 +174,61 @@ print(result)
 
 dfs 안에서 또 dfs를 호출하는 이유:
 **현재 위치 `(x, y)`에서 0이 연결된 모든 방향을 탐색하기 위해** 다시 자기 자신을 호출
+
+
+## BFS 예제 - 미로탈출 (최단거리)
+- BFS는 시작 지점에서 가까운 노드부터 차례대로 그래프의 모든 노드 탐색
+- 상하좌우 연결된 모든 노드로의 거리가 1로 동일
+	- (1, 1) 지점부터 BFS 수행하여 모든 노드의 최단거리 값을 기록하면 해결할 수 있음
+
+![[IMG_208E594EE837-1.jpeg]]
+
+```python
+from collections import deque
+
+# N, M 입력 받기
+n, m = map(int, input().split())
+
+# 2차원 리스트로 미로 정보 입력 받기
+graph = []
+for i in range(n):
+    graph.append(list(map(int, input())))
+
+# 이동할 네 방향 (상, 하, 좌, 우)
+dx = [-1, 1, 0, 0]
+dy = [0, 0, -1, 1]
+
+# BFS 함수 정의
+def bfs(x, y):
+    queue = deque()
+    queue.append((x, y))
+
+    # 큐가 빌 때까지 반복
+    while queue:
+        x, y = queue.popleft()
+
+        # 현재 위치에서 네 방향으로 이동
+        for i in range(4):
+            nx = x + dx[i]
+            ny = y + dy[i]
+
+            # 미로 공간을 벗어난 경우 무시
+            if nx < 0 or nx >= n or ny < 0 or ny >= m:
+                continue
+            
+            # 벽(0)인 경우 무시
+            if graph[nx][ny] == 0:
+                continue
+            
+            # 처음 방문하는 길(1)인 경우 최단 거리 기록
+            if graph[nx][ny] == 1:
+                graph[nx][ny] = graph[x][y] + 1
+                queue.append((nx, ny))
+
+    # 도착 지점의 최단 거리 반환
+    return graph[n-1][m-1]
+
+# BFS 실행 후 최단 거리 출력
+print(bfs(0, 0))
+
+```
