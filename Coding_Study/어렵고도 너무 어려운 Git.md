@@ -8,6 +8,13 @@ on main : git에 연결이 되어있는 상태
 1. 바보같이 파일 open  folder
 2. 멋있게,,  cd 폴더명 (cd →  tab 누르기)
 
+작업 시작 전 변동사항 가져오기
+```shell
+git fetch
+git pull origin main
+```
+
+
 ``` shell
 
 git add . # 내가 올린 파일을 깃허브가 볼 수 있도록 해줌 / tab으로 찾기
@@ -16,11 +23,7 @@ git push origin main # origin(내 맥북)을 main 브랜치에 push(올리겠습
 
 ```
 
-작업 시작 전 변동사항 가져오기
-```shell
-git fetch
-git pull origin main
-```
+
 ### 꿀팁
 문장 앞 뒤 : command + → / <- 
 한 토큰 앞 뒤 : option + → / <- 
