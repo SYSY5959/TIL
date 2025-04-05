@@ -167,3 +167,16 @@ Transformer는 RNN처럼 순서를 하나씩 따르지 않기 때문에, **단�
 | 4. Residual Connection | 계산된 벡터에 원래 입력을 더해서 정보 손실 방지 |
 
 → 병렬 연산이 가능해서 빠르게 학습
+
+
+# Transformer 구현
+
+```plaintext
+
+1. PositionalEncoding        ⟶ 위치 정보 인코딩
+2. MultiHeadAttention        ⟶ 문맥 파악 (자기/교차 어텐션)
+3. FeedForward               ⟶ 단어별 변환
+4. EncoderLayer / DecoderLayer  ⟶ Transformer 블록
+5. Encoder / Decoder         ⟶ 블록 쌓은 구조
+6. Transformer               ⟶ 전체 모델 조립
+```
