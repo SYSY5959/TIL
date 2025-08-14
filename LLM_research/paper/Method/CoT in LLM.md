@@ -10,6 +10,7 @@ NeurIPS 2022 (Google Research, Brain Team)
  **중간 사고 과정을 포함한 prompt (〈input, chain of thought, output〉)가 LLM의 reasoning 성능을 향상시킴**
 
 ![[Pasted image 20250722013329.png]]
+![figure1](Pasted image 20250722013329.png)
 
 나머지 task : 수작업 된 8개의 예제 공통으로 사용
 AQuA (객관식) : 별도의 5개 예제 사용
