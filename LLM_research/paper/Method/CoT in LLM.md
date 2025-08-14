@@ -2,7 +2,6 @@
 
 NeurIPS 2022 (Google Research, Brain Team)
 
-![](<./Images/Pasted image 20250814145544.png>)
 
 ## 전체 내용 정리
 
@@ -11,12 +10,12 @@ NeurIPS 2022 (Google Research, Brain Team)
 **fine-tuning 없이!!**
  **중간 사고 과정을 포함한 prompt (〈input, chain of thought, output〉)가 LLM의 reasoning 성능을 향상시킴**
 
-![[../../meeting/Images/Pasted image 20250722013329.png]]
-![figure1](Pasted image 20250722013329.png)
+![Figure1](../../meeting/Images/Pasted_image_20250722013329.png)
 
 나머지 task : 수작업 된 8개의 예제 공통으로 사용
 AQuA (객관식) : 별도의 5개 예제 사용
-![[../../meeting/Images/Pasted image 20250722021249.png]]
+
+![Figure2](../../meeting/Images/Pasted_image_20250722021249.png)
 
 결과 : **LaMDA < GPT-3 < PaLM** 성능 Good
 → 모델 크기 커질수록 CoT prompting이 추론 능력 향상시킴
@@ -28,7 +27,7 @@ chain of thought : 복잡한 추론을 할 때 거치는 중간 단계의 일련
 이 사고 과정을 생성하게 되면, LLM의 복잡한 추론 능력이 크게 향상 됨.
 
 
-![[./Images/Pasted image 20250722013321.png]]
+![Figure3](./Images/Pasted_image_20250722013321.png)
 
 # 1 Introduction
 
@@ -70,7 +69,7 @@ CoT prompting 장점 :
 
 8개의 예제를 선택한 구체적인 기준에 대한 설명 X 
 
-![[./Images/Pasted image 20250722021237.png]]
+![Figure4](./Images/Pasted_image_20250722021237.png)
 
 ### LM
 - GPT-3 : 최대 175B 파라미터
@@ -91,7 +90,7 @@ PaLM: 8B, 62B, 540B 파라미터로 구성됨. 최대 540B →  GPT-3, LaMDA보�
 - 작은 규모에서는 성능 개선에 도움 X, 오히려 논리적이지 않은 중간 단계 출력 생성해냄
 - 약 1000억 파라미터 이상 모델 부터 성능 향상이 두드러짐. 특히 복잡한 문제에서 큰 성능 개선됨
 
-![[./Images/Pasted image 20250720192517.png]]
+![Figure5](./Images/Pasted_image_20250720192517.png)
 
 **LaMDA < GPT-3 < PaLM** 으로 갈수록 모델 파라미터 커짐
 → 모델 크기 커질수록 CoT prompting이 추론 능력 향상시킴
@@ -101,7 +100,7 @@ PaLM: 8B, 62B, 540B 파라미터로 구성됨. 최대 540B →  GPT-3, LaMDA보�
 
 ## Ablation Study
 
-![[./Images/Pasted image 20250720193959.png]]
+![Figure6](./Images/Pasted_image_20250720193959.png)
 
 ### Equation only
 수학 방정식만 생성하여 답변하는 방식
