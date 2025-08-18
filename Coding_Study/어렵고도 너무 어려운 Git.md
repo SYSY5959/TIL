@@ -1,3 +1,4 @@
+
 vs code 열기
 git이 연결되어있는 로컬 폴더를 들어가기
 - seungyeon/TIL 열기
@@ -8,6 +9,7 @@ on main : git에 연결이 되어있는 상태
 1. 바보같이 파일 open  folder
 2. 멋있게,,  cd 폴더명 (cd →  tab 누르기)
 
+파인더 숨긴 파일 보기 : command + shift + .
 ### 작업 올릴 때
 
 작업 시작 전 변동사항 가져오기
