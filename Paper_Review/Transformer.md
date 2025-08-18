@@ -19,7 +19,7 @@ Transformer는 2017년 발표된 논문 “Attention Is All You Need”에서 �
 
 `입력 문장 → [ 인코더 6층 ] → 중간 표현 → [ 디코더 6층 ] → 출력 문장`
 
-![[스크린샷 2025-04-03 오후 3.03.28.png]]
+![[./Images/스크린샷 2025-04-03 오후 3.03.28.png]]
 ### 인코더
 - 입력 문장을 받아서 전체 문맥을 이해하는 역할
 
@@ -111,7 +111,7 @@ $$MultiHead(Q,K,V)=Concat(head1​,...,head8​)×Wo$$
 
 ## Transformer 핵심 구성 요소
 
-![[Pasted image 20250403171859.png]]
+![[./Images/Pasted image 20250403171859.png]]
 ### 1. Word Embedding (단어 임베딩)
 
 - 맨 아래에 `"let’s"`, `"to"`, `"go"`, `<EOS>`와 같은 단어들
@@ -130,7 +130,7 @@ Transformer는 RNN처럼 순서를 하나씩 따르지 않기 때문에, **단�
 
 → 이렇게 하면 "go"가 문장 내 어디에 있는지도 표현 가능
 
-![[스크린샷 2025-04-03 오후 5.23.53.png]]
+![[./Images/스크린샷 2025-04-03 오후 5.23.53.png]]
 
 ### 3. Self-Attention (자기 어텐션)
 
