@@ -1,5 +1,5 @@
-## MultiTool-CoT - ACL 2023 
-*MultiTool-CoT: GPT-3 Can Use Multiple External Tools with Chain of Thought Prompting*
+# MultiTool-CoT: GPT-3 Can Use Multiple External Tools with Chain of Thought Prompting
+ACL 2023 
 
 배경 : LLM 정확한 수치 계산 어려움 & 특정 도메인 지식 부족 → tool 사용
 기존에는 하나의 tool 사용 → 이 논문에서는 **여러 tool들을 결합해서 사용**
