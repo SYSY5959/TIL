@@ -22,7 +22,7 @@ https://arxiv.org/pdf/2404.15676
     - Instructions (Chain-of-Task, Chain-of-Instructions)
     - Histories (Chain-of-History, Chain-of-Opinion)
     - Retrievals ([ReAct](<../Method/ReAct.md>), Chain-of-Query, Chain-of-Knowledgea) 
-    - **Tools** ( [ChatCoT](<../Method/ChatCoT.md>), [MultiTool-CoT](<../Method/MultiTool-CoT.md>), [-ing - CoAbstract](<../Method/-ing - CoAbstract.md>)) 
+    - **Tools** ( [ChatCoT](<../Method/ChatCoT.md>), [MultiTool-CoT](<../Method/MultiTool-CoT.md>), [CoAbstract](<../Method/CoAbstract.md>)) 
 
 3. **Chain-of-Feedback**
     - Self-feedback (Self-Refine, Chain-of-Verification)
