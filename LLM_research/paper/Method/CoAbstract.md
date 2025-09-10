@@ -76,7 +76,7 @@ CoA 제안 :
 # 3 Method
 
 ### Chain of Abstraction (CoA) Reasoning
-- **일반 추론(Reasoning strategy)** 과 **도메인 지식(툴로 얻는 값)** 을 분리
+- **일반 추론(Reasoning strategy)** 과 **툴로 얻는 값** 을 분리
 	→ 추론과 tool 호출을 병렬화(pipelining) → inference 속도 향상
 - LLM은 **추상 placeholder (y1, y2 …)** 로 reasoning chain을 생성
 - 외부 tool(계산기, Wiki 검색 등)이 placeholder를 실제 값으로 채워 넣음 → 최종 답변 생성
