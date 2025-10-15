@@ -17,7 +17,7 @@ Github : https://github.com/SUFE-AIFLM-Lab/Fin-R1
 1. fragmented financial data : 서로 다른 출처/형식의 금융 지식이 흩어져 있어서, 통합/전처리가 어렵고 누락/중복이 발생하는 문제
 2. reasoning black-box : 규제, 감사 요건이 있는 금융에서는 추론 과정의 해석 가능성 X
 3. weak business generalization : 새로운 금융 시나리오에 안정적으로 적용되기 힘듬
-→ 실제 금융업계에서 활용하기 어려움
+→ 실제 금융업계에서 활용하기 어려움.
 
 # Fin-R1 Data
 LLM을 금융 추론용으로 파인튜닝하기 위해 만든 SFT용 데이터셋
@@ -74,6 +74,10 @@ LLM을 금융 추론용으로 파인튜닝하기 위해 만든 SFT용 데이터�
 ![](<../Method/Images/Pasted image 20250908182946.png>)
 
 ![](<../Method/Images/Pasted image 20250908225800.png>)
+
+
+---
+
 
 # Framework
 
