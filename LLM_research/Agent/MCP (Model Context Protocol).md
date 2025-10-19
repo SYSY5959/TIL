@@ -24,8 +24,6 @@ like USB-C : 주변 장치와 악세사리에 장치를 연결하는 표준화�
 - OpenAI ChatGPT와 Google Gemini는 웹과 데스크톱 UI에서는 MCP 연결을 지원 X , SDK에서는 지원
 - [OpenAI Platform](https://platform.openai.com/docs/guides/tools-remote-mcp) / [Google AI For Developer](https://ai.google.dev/gemini-api/docs/function-calling?hl=ko&amp;example=meeting#model_context_protocol_mcp)
 
-
-
 ![](<./Images/Pasted image 20250910133058.png>)
 
 https://bcho.tistory.com/1470
